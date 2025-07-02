@@ -29,7 +29,7 @@ app.use(express.static("public"))
 
 import userRoute from "./routes/user.route.js"
 
-app.use("api/v1/user",userRoute)
+app.use("/api/v1/user",userRoute)
 
 
 export {app}
