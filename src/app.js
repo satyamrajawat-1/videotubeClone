@@ -37,6 +37,7 @@ app.use('/api/v1/video',videoRouter)
 import tweetRouter from "./routes/tweet.routes.js"
 app.use('/api/v1/tweet',tweetRouter)
 
-
+import likeRouter from "./routes/like.route.js"
+app.use('/api/v1/like',likeRouter)
 export {app}
 
