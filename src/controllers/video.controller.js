@@ -17,7 +17,7 @@ if(query){
     matchStage.title = {$regex:query,$options:"i"}
 }
 if(userId){
-    matchStage.owner= mongoose.Types.ObjectId(userId)
+    matchStage.owner= new mongoose.Types.ObjectId(userId)
 }
 const sortStage ={ [sortBy] : sortType === "desc"?1:-1}
 
